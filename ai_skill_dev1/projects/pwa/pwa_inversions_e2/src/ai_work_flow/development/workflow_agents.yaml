@@ -1,0 +1,238 @@
+# Workflow de Agentes - Proyecto pwa_inversions_e2
+# Versión: 1.0
+# Fecha: 08 de Marzo 2026
+# Status: 🚧 Pendiente actualización FASE 2.3 (Kakashi)
+
+project: pwa_inversions_e2
+version: 1.0
+last_updated: 2026-03-08
+
+# ============================================================================
+# FASE 2.3: INVESTIGACIÓN (Kakashi)
+# ============================================================================
+
+phase_2_3:
+  agent: Kakashi
+  status: ⏳ Pendiente
+  duration: 2-3 días
+  description: "Investigación técnica y diseño de arquitectura"
+  
+  tasks:
+    - task_id: "FASE-2.3-001"
+      title: "Investigar APIs de Brokers (IBKR, Alpaca)"
+      description: "Análisis profundo de capacidades, limitaciones, rate limits"
+      deliverable: "knowledge/local/01_broker_api_research.md"
+      status: ⏳ Pendiente
+      
+    - task_id: "FASE-2.3-002"
+      title: "Investigar Indicadores Técnicos"
+      description: "RSI, MACD, Bollinger Bands, ATR - cálculo y validación vs TradingView"
+      deliverable: "knowledge/local/02_indicators_research.md"
+      status: ⏳ Pendiente
+      
+    - task_id: "FASE-2.3-003"
+      title: "Investigar Estrategias de Opciones"
+      description: "Iron Condor, Straddle, Strangle, Covered Call - análisis y criterios"
+      deliverable: "knowledge/local/03_strategies_research.md"
+      status: ⏳ Pendiente
+      
+    - task_id: "FASE-2.3-004"
+      title: "Diseñar Arquitectura Técnica"
+      description: "Estructura de módulos, flujos de datos, dependencias"
+      deliverable: "config.yaml (proyecto)"
+      status: ⏳ Pendiente
+      
+    - task_id: "FASE-2.3-005"
+      title: "Generar Especificación Técnica"
+      description: "Traducir SPECIFICATION.md a plan técnico con tickets derivados"
+      deliverable: "workflow_agents.yaml v1.1"
+      status: ⏳ Pendiente
+
+# ============================================================================
+# FASE 2.4: ESTRUCTURA BASE (Naruto)
+# ============================================================================
+
+phase_2_4:
+  agent: Naruto
+  status: ⏳ Pendiente (Depende de FASE 2.3)
+  duration: 1-2 días
+  description: "Crear estructura base del proyecto"
+  dependencies:
+    - "FASE-2.3 completada"
+  
+  tasks:
+    - task_id: "FASE-2.4-001"
+      title: "Configurar Vite + React + TypeScript"
+      description: "vite.config.ts, tsconfig.json, package.json"
+      deliverable: "Proyecto compilable sin errores"
+      status: ⏳ Pendiente
+      
+    - task_id: "FASE-2.4-002"
+      title: "Crear estructura de carpetas SRC-First"
+      description: "components, features, services, hooks, pages, store, etc."
+      deliverable: "Árbol de carpetas completo"
+      status: ⏳ Pendiente
+      
+    - task_id: "FASE-2.4-003"
+      title: "Instalar dependencias base"
+      description: "Zustand, TailwindCSS, TradingView Lightweight Charts, etc."
+      deliverable: "package-lock.json actualizado"
+      status: ⏳ Pendiente
+      
+    - task_id: "FASE-2.4-004"
+      title: "Crear componentes base"
+      description: "Layout principal, navbar, sidebar"
+      deliverable: "Componentes funcionales"
+      status: ⏳ Pendiente
+
+# ============================================================================
+# FASE 3.1: DESARROLLO (Naruto - Principal)
+# ============================================================================
+
+phase_3_1:
+  agent: Naruto
+  status: ⏳ Pendiente (Depende de FASE 2.4)
+  duration: 5-7 días
+  description: "Implementación de funcionalidad principal"
+  dependencies:
+    - "FASE-2.4 completada"
+  
+  tasks:
+    - task_id: "FASE-3.1-001"
+      title: "Implementar Broker Connector (IBKR)"
+      description: "Conexión, autenticación, market data streaming"
+      deliverable: "src/services/broker/ibkr.connector.ts"
+      status: ⏳ Pendiente
+      
+    - task_id: "FASE-3.1-002"
+      title: "Implementar Market Data Feed"
+      description: "Suscripción, actualización, gestión de timeframes"
+      deliverable: "src/services/market-data/"
+      status: ⏳ Pendiente
+      
+    - task_id: "FASE-3.1-003"
+      title: "Implementar Motor de Indicadores"
+      description: "RSI, MACD, Bollinger Bands - cálculos correctos"
+      deliverable: "src/services/indicators/"
+      status: ⏳ Pendiente
+      
+    - task_id: "FASE-3.1-004"
+      title: "Implementar Motor de Señales"
+      description: "Detector de señales, confianza, criterios"
+      deliverable: "src/services/signals/"
+      status: ⏳ Pendiente
+      
+    - task_id: "FASE-3.1-005"
+      title: "Implementar Dashboard Principal"
+      description: "Watchlist, gráficas TradingView, señales"
+      deliverable: "src/features/dashboard/"
+      status: ⏳ Pendiente
+
+# ============================================================================
+# FASE 3.2: OPTIMIZACIÓN (Sasuke - Paralelo)
+# ============================================================================
+
+phase_3_2:
+  agent: Sasuke
+  status: ⏳ Pendiente (Paralelo a FASE 3.1)
+  duration: 3-4 días
+  description: "Optimización de rendimiento y seguridad"
+  dependencies:
+    - "Módulos de Naruto completados"
+  
+  tasks:
+    - task_id: "FASE-3.2-001"
+      title: "Auditar Seguridad de Credenciales"
+      description: "Verificar API keys, variables de entorno, secrets"
+      deliverable: "Reporte de seguridad"
+      status: ⏳ Pendiente
+      
+    - task_id: "FASE-3.2-002"
+      title: "Optimizar Latencia de Market Data"
+      description: "Profiling, throttling, caché - objetivo <100ms"
+      deliverable: "Código optimizado + métricas"
+      status: ⏳ Pendiente
+      
+    - task_id: "FASE-3.2-003"
+      title: "Refactorizar Patrones de Código"
+      description: "DRY principle, reutilización, consolidación"
+      deliverable: "Código refactorizado"
+      status: ⏳ Pendiente
+
+# ============================================================================
+# FASE 3.3: TESTING (Sakura - Paralelo)
+# ============================================================================
+
+phase_3_3:
+  agent: Sakura
+  status: ⏳ Pendiente (Paralelo a FASE 3.1)
+  duration: 3-4 días
+  description: "Testing y validación de calidad"
+  dependencies:
+    - "Módulos de Naruto completados"
+  
+  tasks:
+    - task_id: "FASE-3.3-001"
+      title: "Crear Suite de Tests para Indicadores"
+      description: "Unit tests contra TradingView, precisión ±0.01"
+      deliverable: "tests/indicators/*.test.ts"
+      status: ⏳ Pendiente
+      
+    - task_id: "FASE-3.3-002"
+      title: "Crear Suite de Tests para Señales"
+      description: "Unit + integration tests, validación paper trading"
+      deliverable: "tests/signals/*.test.ts"
+      status: ⏳ Pendiente
+      
+    - task_id: "FASE-3.3-003"
+      title: "Ejecutar Tests de Regresión"
+      description: "Verificar que nuevos cambios no rompan funcionalidad"
+      deliverable: "Reporte de regression"
+      status: ⏳ Pendiente
+      
+    - task_id: "FASE-3.3-004"
+      title: "Validar Precisión Indicadores vs TradingView"
+      description: "Históricos, edge cases, actualización en tiempo real"
+      deliverable: "Validación report (+80% cobertura)"
+      status: ⏳ Pendiente
+
+# ============================================================================
+# FASE 4: APROBACIÓN Y CIERRE
+# ============================================================================
+
+phase_4:
+  status: ⏳ Pendiente
+  description: "Aprobación final y preparación producción"
+  dependencies:
+    - "FASE 3.1 completada"
+    - "FASE 3.2 completada"
+    - "FASE 3.3 completada"
+  
+  criteria:
+    - "100% indicadores validados vs TradingView"
+    - "Latencia <100ms en market data"
+    - ">80% code coverage en tests"
+    - "0 API keys expuestas"
+    - "Todos tickets cerrados con evidencia"
+
+# ============================================================================
+# CONFIGURACIÓN GLOBAL
+# ============================================================================
+
+configuration:
+  project_workspace: "projects/pwa/pwa_inversions_e2/"
+  methodology_url: "ai_global/AI_SKILL_DEVELOPMENT_METHODOLOGY.md"
+  specification_url: "SPECIFICATION_pwa_inversions_drfic_v1.1.md"
+  knowledge_base: "projects/pwa/pwa_inversions_e2/src/ai_work_flow/knowledge/"
+  tickets_directory: "projects/pwa/pwa_inversions_e2/src/ai_work_flow/tickets/"
+
+# ============================================================================
+# NOTAS
+# ============================================================================
+
+notes: |
+  - Este archivo es controlado por la metodología AI SKILL DEVELOPMENT
+  - Se actualiza al completar cada FASE
+  - Naruto puede agregar/modificar tasks durante implementación
+  - Sakura reporta blockers a través de tickets
+  - Versión será incrementada con cambios mayores

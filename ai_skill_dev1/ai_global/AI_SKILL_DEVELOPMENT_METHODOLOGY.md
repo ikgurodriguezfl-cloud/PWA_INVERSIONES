@@ -28,10 +28,10 @@ ai_skill_dev1/
 |   ├── AI_SKILL_DEVELOPMENT_METHODOLOGY.md # Este documento
 │   ├── agents/                             # 🤖 Agentes de IA de Desarrollo
 │   │   ├── README.md
-│   │   ├── fic_picoro_agent_orchestrator.md
-│   │   ├── fic_goku_agent_dev1.md
-│   │   ├── fic_vegeta_agent_dev2.md
-│   │   └── fic_bulma_agent_tester1.md
+│   │   ├── fic_kakashi_agent_orchestrator.md
+│   │   ├── fic_naruto_agent_dev1.md
+│   │   ├── fic_sasuke_agent_dev2.md
+│   │   └── fic_sakura_agent_tester1.md
 │   │
 │   ├── skills/                      # 🎯 Skills de IA (documentación)
 │   │   ├── README.md                # 🛠️ Índice de skills (habilidades)
@@ -77,7 +77,7 @@ ai_skill_dev1/
     │   │   ├── src/                 # Aquí se define la estructura completa
     |   |   |   ├── ai_work_flow/           # ✅ Estructura metodológica del proyecto
     │   │   │   |   ├── development/        # Instrucciones para agentes
-    │   |   │   │   │   ├── workflow_agents.yaml  # Tareas de Picoro/Goku/Vegeta/Bulma
+    │   |   │   │   │   ├── workflow_agents.yaml  # Tareas de kakashi/naruto/sasuke/sakura
     │   |   │   │   │   └── README.md
     │   |   │   │   ├── docs/               # Documentación funcional/técnica
     │   |   │   │   │   ├── specs/
@@ -179,13 +179,13 @@ Estos son **4 agentes de IA operativos** que trabajan juntos en el ciclo de desa
 **Ubicación**: `ai_skill_dev1/ai_global/agents/` (archivos.md)
 
 ```
-🧠 fic_picoro_agent_orchestrator
+🧠 fic_kakashi_agent_orchestrator
 - Rol: Analista/Arquitecto/Orquestador
 - Skills: ticket_analyzer, architecture_designer, requirement_validator, knowledge_synthesizer
 - CUÁNDO: FASE 2.3 (Investigación) y FASE 2.4 (Diseño)
 - Función: Analiza SPECIFICATION.md, diseña arquitectura financiera, genera config.yaml
 
-👨‍💻 fic_goku_agent_dev1
+👨‍💻 fic_naruto_agent_dev1
 - Rol: Programador Senior #1
 - Skills: react_code_generator, typescript_code_generator, vite_code_generator,
           tradingview_widgets_integrator, broker_api_integrator, documentation_writer,
@@ -195,17 +195,17 @@ Estos son **4 agentes de IA operativos** que trabajan juntos en el ciclo de desa
            indicadores técnicos, módulos de señales, integración con APIs financieras
 - Estándar de documentación: comentarios inline con prefijo FIC en inglés y español
 
-🥷 fic_vegeta_agent_dev2
+🥷 fic_sasuke_agent_dev2
 - Rol: Optimizador/Desarrollador Senior #2
 - Skills: code_optimizer, performance_analyzer, security_auditor, pattern_refactorer
-- CUÁNDO: FASE 3 (durante/después de Goku)
+- CUÁNDO: FASE 3 (durante/después de naruto)
 - Función: Optimiza latencia en feeds de datos de mercado, audita seguridad de
            credenciales de broker, refactoriza patrones de gestión de riesgo
 
-🧪 fic_bulma_agent_tester1
+🧪 fic_sakura_agent_tester1
 - Rol: QA Tester/Guardiana de Calidad
 - Skills: test_case_generator, bug_detector, quality_validator, regression_tester
-- CUÁNDO: FASE 3 (después de Goku/Vegeta)
+- CUÁNDO: FASE 3 (después de naruto/sasuke)
 - Función: Crea tests para estrategias de trading, valida cálculos de indicadores,
            verifica precisión de señales de compra/venta
 ```
@@ -214,19 +214,19 @@ Estos son **4 agentes de IA operativos** que trabajan juntos en el ciclo de desa
 
 ```
 ┌─ FASE 2.3 (Investigación) ─────────────────────┐
-│ Picoro: Investiga APIs financieras, brokers,   │
+│ kakashi: Investiga APIs financieras, brokers,   │
 │         estrategias a implementar              │
 │ Deliverable: Arquitectura documentada          │
 └────────────────────────────────────────────────┘
                         ↓
 ┌─ FASE 2.4 (Estructura) ────────────────────────┐
-│ Goku: Crea estructura base, skeletons de       │
+│ naruto: Crea estructura base, skeletons de       │
 │       features de inversión                    │
 │ Deliverable: Proyecto estructurado             │
 └────────────────────────────────────────────────┘
                         ↓
 ┌─ FASE 3.1 (Implementación) ────────────────────┐
-│ Goku: Implementa servicios/módulos:            │
+│ naruto: Implementa servicios/módulos:            │
 │  - broker_connector, market_data               │
 │  - technical_indicators, signal_detector       │
 │  - options_chain, backtesting_engine           │
@@ -235,7 +235,7 @@ Estos son **4 agentes de IA operativos** que trabajan juntos en el ciclo de desa
                         ↓
         ┌───────────────┬──────────────┐
         ↓               ↓
-    ┌─ VEGETA ──────┐  ┌─ BULMA ──────┐
+    ┌─ sasuke ──────┐  ┌─ sakura ──────┐
     │ Optimiza      │  │ Crea tests   │
     │ latencia feeds│  │ Valida       │
     │ Seguridad API │  │ cálculos     │
@@ -254,7 +254,7 @@ Estos son **4 agentes de IA operativos** que trabajan juntos en el ciclo de desa
     [MÓDULO LISTO]
 ```
 
-**Regla de Oro**: Orden es **Picoro → Goku → (Vegeta ∥ Bulma) → Aprobación** ✅
+**Regla de Oro**: Orden es **kakashi → naruto → (sasuke ∥ sakura) → Aprobación** ✅
 
 **Regla de Documentación Inline (Obligatoria)**:
 - Todo archivo TypeScript/React implementado en FASE 3 debe incluir comentarios con prefijo `FIC`.
@@ -271,10 +271,10 @@ Ver: `development/workflow_agents.yaml` en cada proyecto para tareas específica
 **Definición**: Capacidades específicas de los agentes de IA para ejecutar tareas en el desarrollo.
 
 **Skills de cada Agente**:
-- **Picoro**: ticket_analyzer, architecture_designer, requirement_validator, knowledge_synthesizer
-- **Goku**: react_code_generator, typescript_code_generator, vite_code_generator, tradingview_widgets_integrator, broker_api_integrator, documentation_writer, dependency_manager, code_structure_organizer
-- **Vegeta**: code_optimizer, performance_analyzer, security_auditor, pattern_refactorer
-- **Bulma**: test_case_generator, bug_detector, quality_validator, regression_tester
+- **kakashi**: ticket_analyzer, architecture_designer, requirement_validator, knowledge_synthesizer
+- **naruto**: react_code_generator, typescript_code_generator, vite_code_generator, tradingview_widgets_integrator, broker_api_integrator, documentation_writer, dependency_manager, code_structure_organizer
+- **sasuke**: code_optimizer, performance_analyzer, security_auditor, pattern_refactorer
+- **sakura**: test_case_generator, bug_detector, quality_validator, regression_tester
 
 **NO confundir con**:
 - **assets**: Recursos estáticos (logos brokers, íconos de instrumentos financieros) → `assets/<asset_name>.*`
@@ -915,7 +915,7 @@ TKT-INVRFIC-001: Setup inicial + Broker Connector
 - **Base**: SPECIFICATION.md (original) o incremental/SPEC_00X.md (cambios grandes)
 
 **C. Tickets Internos de Desarrollo**:
-- **Origen**: Derivados del diseño de Picoro
+- **Origen**: Derivados del diseño de kakashi
 - **Formato**: `TKT-INVRFIC-###`
 - **Quién los crea**: TÚ (basándote en workflow_agents.yaml)
 - **Qué contienen**: Tarea específica de implementación
@@ -933,9 +933,9 @@ Ticket Externo: REQ-INV-001
     ↓
 TÚ creas: docs/specs/SPECIFICATION.md
     ↓
-Picoro investiga → knowledge/local/*.md
+kakashi investiga → knowledge/local/*.md
   (brokers, indicadores, estrategias, feeds de datos)
-Picoro diseña → workflow_agents.yaml + config.yaml
+kakashi diseña → workflow_agents.yaml + config.yaml
     ↓
 TÚ creas tickets internos:
     - TKT-INVRFIC-001: Implementar broker_connector (IBKR)
@@ -947,7 +947,7 @@ TÚ creas tickets internos:
     - TKT-INVRFIC-007: Implementar alerts system
     - ...
     ↓
-Por cada ticket: Picoro → Goku → Vegeta → Bulma
+Por cada ticket: kakashi → naruto → sasuke → sakura
     ↓
 Cierras ticket externo REQ-INV-001
 ```
@@ -972,7 +972,7 @@ Archivos Afectados:
 - src/services/indicators/atr.service.ts
 - src/features/market-scanner/components/ScannerRow.tsx
     ↓
-Picoro → Goku → Vegeta → Bulma
+kakashi → naruto → sasuke → sakura
     ↓
 Cierras ticket externo REQ-INV-015
 ```
@@ -994,8 +994,8 @@ Nueva Funcionalidad: Motor de backtesting para Iron Condor, Straddle, Strangle
 Fuente de datos históricos: Polygon.io / CBOE
 ...
     ↓
-Picoro analiza spec incremental
-Picoro diseña → actualiza workflow_agents.yaml
+kakashi analiza spec incremental
+kakashi diseña → actualiza workflow_agents.yaml
     ↓
 TÚ creas nuevos tickets internos:
     - TKT-INVRFIC-040: Integrar histórico de opciones (Polygon.io)
@@ -1004,7 +1004,7 @@ TÚ creas nuevos tickets internos:
     - TKT-INVRFIC-043: Métricas de rendimiento (Sharpe, Max Drawdown)
     - ...
     ↓
-Por cada ticket: Picoro → Goku → Vegeta → Bulma
+Por cada ticket: kakashi → naruto → sasuke → sakura
     ↓
 Cierras ticket externo REQ-INV-030
 ```
@@ -1068,21 +1068,21 @@ Cierras ticket externo REQ-INV-030
 
 ## Implementación
 
-### Picoro analiza:
+### kakashi analiza:
 - [ ] Ticket revisado
 - [ ] Impacto en lógica de señales identificado
 - [ ] Plan aprobado
 
-### Goku implementa:
+### naruto implementa:
 - [ ] Código implementado (TypeScript/React)
 - [ ] Comentarios FIC en inglés/español
 - [ ] Integración con broker verificada (si aplica)
 
-### Vegeta optimiza:
+### sasuke optimiza:
 - [ ] Latencia de feed de datos revisada (si aplica)
 - [ ] Seguridad de credenciales de broker auditada (si aplica)
 
-### Bulma valida:
+### sakura valida:
 - [ ] Tests unitarios creados/actualizados
 - [ ] Cálculos de indicador validados vs. TradingView (si aplica)
 - [ ] Señales de trading verificadas con datos históricos
@@ -1111,19 +1111,19 @@ Cierras ticket externo REQ-INV-030
 
 ```mermaid
 graph LR
-    A[Crear Ticket Interno] --> B[Picoro Analiza]
-    B --> C[Goku Implementa]
-    C --> D[Vegeta Optimiza]
-    D --> E[Bulma Valida]
+    A[Crear Ticket Interno] --> B[kakashi Analiza]
+    B --> C[naruto Implementa]
+    C --> D[sasuke Optimiza]
+    D --> E[sakura Valida]
     E --> F[Review]
     F --> G[Cerrar Ticket]
 ```
 
-1. **Crear Ticket Interno**: Basado en diseño de Picoro o necesidad del trader
-2. **Picoro Analiza**: Confirma plan técnico, identifica impacto en señales/estrategias
-3. **Goku Implementa**: Escribe código TypeScript/React, integra APIs financieras
-4. **Vegeta Optimiza**: Revisa latencia de datos de mercado, seguridad de API keys
-5. **Bulma Valida**: Crea tests, valida cálculos de indicadores, prueba señales
+1. **Crear Ticket Interno**: Basado en diseño de kakashi o necesidad del trader
+2. **kakashi Analiza**: Confirma plan técnico, identifica impacto en señales/estrategias
+3. **naruto Implementa**: Escribe código TypeScript/React, integra APIs financieras
+4. **sasuke Optimiza**: Revisa latencia de datos de mercado, seguridad de API keys
+5. **sakura Valida**: Crea tests, valida cálculos de indicadores, prueba señales
 6. **Review**: Aprobación de código y lógica financiera
 7. **Cerrar**: Marcar ticket como completado con evidencia
 
@@ -1131,11 +1131,11 @@ graph LR
 
 - [ ] Ticket definido con alcance claro
 - [ ] Ticket externo referenciado (si aplica)
-- [ ] Picoro analiza y define plan técnico/financiero
+- [ ] kakashi analiza y define plan técnico/financiero
 - [ ] Skills necesarios confirmados o agregados
-- [ ] Goku implementa y documenta (comentarios FIC obligatorios)
-- [ ] Vegeta optimiza (latencia, seguridad, si aplica)
-- [ ] Bulma crea tests y valida cálculos financieros
+- [ ] naruto implementa y documenta (comentarios FIC obligatorios)
+- [ ] sasuke optimiza (latencia, seguridad, si aplica)
+- [ ] sakura crea tests y valida cálculos financieros
 - [ ] Evidencia de pruebas adjunta (incluyendo validación vs. TradingView si aplica)
 - [ ] Ticket cerrado con aprobación
 - [ ] Ticket externo cerrado (si aplica)
@@ -1165,7 +1165,7 @@ graph LR
 | Elemento | Formato | Ejemplo |
 |----------|---------|---------|
 | Proyecto | `pwa_<nombre>_<autor>` | `pwa_inversions_drfic` |
-| Agente | `fic_<nombre>_agent` | `fic_goku_agent_dev1` |
+| Agente | `fic_<nombre>_agent` | `fic_naruto_agent_dev1` |
 | Skill | `<dominio>_<acción>` | `broker_connector`, `signal_detector`, `options_analyzer` |
 | Ticket | `TKT-INVRFIC-###` | `TKT-INVRFIC-001` |
 | Knowledge | `<tipo>_<tema>.md` | `lesson_options_chain_latency.md`, `ref_ibkr_api.md` |
@@ -1183,10 +1183,10 @@ project:
                análisis técnico y gestión de estrategias de opciones
 
 agents_involved:
-  - fic_picoro_agent_orchestrator    # FASE 2.3-2.4
-  - fic_goku_agent_dev1              # FASE 2.4-3
-  - fic_vegeta_agent_dev2            # FASE 3
-  - fic_bulma_agent_tester1          # FASE 3
+  - fic_kakashi_agent_orchestrator    # FASE 2.3-2.4
+  - fic_naruto_agent_dev1              # FASE 2.4-3
+  - fic_sasuke_agent_dev2            # FASE 3
+  - fic_sakura_agent_tester1          # FASE 3
 
 tech_stack:
   frontend: React + TypeScript + Vite
@@ -1209,65 +1209,65 @@ metadata:
 ```yaml
 # Define tareas ESPECÍFICAS para agentes en el proyecto de inversiones
 agents_tasks:
-  picoro:
-    - task_id: PICORO_001
+  kakashi:
+    - task_id: kakashi_001
       name: Analizar SPECIFICATION.md del proyecto de inversiones
       description: Investigación profunda de APIs financieras, estrategias y arquitectura
       inputs: SPECIFICATION.md, knowledge/
       outputs: Arquitectura diseñada, config.yaml, lista de servicios/features
 
-  goku:
-    - task_id: GOKU_001
+  naruto:
+    - task_id: naruto_001
       name: Implementar broker_connector service (IBKR)
       description: Conexión a Interactive Brokers TWS API
       inputs: config.yaml, knowledge/local/01_broker_api_research.md
       outputs: src/services/broker/ibkr.connector.ts
 
-    - task_id: GOKU_002
+    - task_id: naruto_002
       name: Implementar technical_indicators service
       description: RSI, MACD, Bollinger Bands, ATR sobre datos OHLCV
       inputs: config.yaml, knowledge/local/03_technical_indicators_patterns.md
       outputs: src/services/indicators/*.service.ts
 
-    - task_id: GOKU_003
+    - task_id: naruto_003
       name: Implementar signal_detector engine
       description: Motor de detección de señales de compra/venta
       inputs: Servicios de indicadores, knowledge/local/04_options_strategies_decisions.md
       outputs: src/services/signals/signal_detector.service.ts
 
-    - task_id: GOKU_004
+    - task_id: naruto_004
       name: Implementar dashboard UI principal
       description: Vista principal con watchlist, señales y gráficas
       inputs: TradingView widgets, store global
       outputs: src/features/dashboard/
 
-  vegeta:
-    - task_id: VEGETA_001
+  sasuke:
+    - task_id: sasuke_001
       name: Optimizar latencia de market data feed
       description: Asegurar actualizaciones <100ms en señales críticas
-      inputs: Código final de Goku (servicios de datos)
+      inputs: Código final de naruto (servicios de datos)
       outputs: Código optimizado con throttling/debouncing
 
-    - task_id: VEGETA_002
+    - task_id: sasuke_002
       name: Auditar seguridad de API keys y credenciales de broker
       description: Verificar que ninguna credencial quede expuesta en cliente
       inputs: Código completo del proyecto
       outputs: Reporte de seguridad + código corregido
 
-  bulma:
-    - task_id: BULMA_001
+  sakura:
+    - task_id: sakura_001
       name: Tests unitarios de indicadores técnicos
       description: Validar RSI, MACD, BB contra datos de referencia de TradingView
       inputs: src/services/indicators/*.service.ts
       outputs: tests/indicators/*.test.ts
 
-    - task_id: BULMA_002
+    - task_id: sakura_002
       name: Tests del motor de señales
       description: Validar precisión de señales con datos históricos conocidos
       inputs: src/services/signals/signal_detector.service.ts
       outputs: tests/signals/*.test.ts
 
-execution_order: picoro → goku → (vegeta ∥ bulma) → final_review
+execution_order: kakashi → naruto → (sasuke ∥ sakura) → final_review
 ```
 
 #### features/`<feature>`/config.yaml
@@ -1405,7 +1405,7 @@ R: Usa SemVer en `config.yaml`. Major.Minor.Patch (ej. 2.1.3).
 R: Usa TradingView Pine Script como referencia. Ejecuta el mismo cálculo sobre los mismos datos históricos y compara resultados. Documenta la validación en el ticket de cierre.
 
 **P: ¿Cómo manejo las API keys de brokers de forma segura?**  
-R: Nunca en código fuente ni en archivos de conocimiento. Usar variables de entorno (`.env`) y documentar en `knowledge/local/` solo la estructura esperada (sin valores reales). Vegeta audita esto en cada módulo de broker.
+R: Nunca en código fuente ni en archivos de conocimiento. Usar variables de entorno (`.env`) y documentar en `knowledge/local/` solo la estructura esperada (sin valores reales). sasuke audita esto en cada módulo de broker.
 
 ---
 
@@ -1435,7 +1435,7 @@ R: Nunca en código fuente ni en archivos de conocimiento. Usar variables de ent
 **Cambios principales respecto a versión RPA**:
 - ✅ Estructura de proyecto adaptada a features de trading (scanner, signals, options, backtesting)
 - ✅ Ejemplos de agentes orientados a APIs de brokers e indicadores financieros
-- ✅ Skills de Goku extendidos con `tradingview_widgets_integrator` y `broker_api_integrator`
+- ✅ Skills de naruto extendidos con `tradingview_widgets_integrator` y `broker_api_integrator`
 - ✅ Knowledge base con referencias a IBKR, TradingView, Polygon.io, etc.
 - ✅ Tickets ejemplificados con lógica de inversiones (indicadores, señales, opciones)
 - ✅ config.yaml con tech stack de la plataforma de inversiones
