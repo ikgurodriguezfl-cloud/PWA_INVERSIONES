@@ -23,7 +23,24 @@
 
 ## 🎯 Skills Asignados
 
-### 1. **react_code_generator**
+### 1. **frontend_design**
+**Descripción**: Diseña interfaces UI/UX y arquitectura visual de componentes React
+
+**Capacidades**:
+- Diseño atómico (atoms, molecules, organisms)
+- System design con design tokens
+- Responsive design y mobile-first
+- Accesibilidad (WCAG 2.1, ARIA)
+- Tailwind CSS avanzado
+- Micro-interactions y animaciones
+- Trading/Finance UI patterns
+- Formularios y validación visual
+
+**Salidas Típicas**: Componentes .tsx, tokens de diseño, guías de estilo
+
+---
+
+### 2. **react_code_generator**
 **Descripción**: Genera componentes React y hooks siguiendo atomic design
 
 **Capacidades**:
@@ -36,7 +53,7 @@
 
 ---
 
-### 2. **typescript_code_generator**
+### 3. **typescript_code_generator**
 **Descripción**: Genera código TypeScript tipado correctamente
 
 **Capacidades**:
@@ -49,7 +66,7 @@
 
 ---
 
-### 3. **vite_code_generator**
+### 4. **vite_code_generator**
 **Descripción**: Genera configuración y estructura Vite
 
 **Capacidades**:
@@ -62,7 +79,7 @@
 
 ---
 
-### 4. **tradingview_widgets_integrator**
+### 5. **tradingview_widgets_integrator**
 **Descripción**: Integra gráficas y widgets de TradingView
 
 **Capacidades**:
@@ -75,7 +92,7 @@
 
 ---
 
-### 5. **broker_api_integrator**
+### 6. **broker_api_integrator**
 **Descripción**: Integra APIs de brokers financieros
 
 **Capacidades**:
@@ -89,7 +106,7 @@
 
 ---
 
-### 6. **documentation_writer**
+### 7. **documentation_writer**
 **Descripción**: Documenta decisiones técnicas e implementación
 
 **Capacidades**:
@@ -102,7 +119,7 @@
 
 ---
 
-### 7. **dependency_manager**
+### 8. **dependency_manager**
 **Descripción**: Gestiona dependencias y librerías
 
 **Capacidades**:
@@ -116,7 +133,7 @@
 
 ---
 
-### 8. **code_structure_organizer**
+### 9. **code_structure_organizer**
 **Descripción**: Organiza estructura de código siguiendo convenciones
 
 **Capacidades**:
@@ -135,6 +152,8 @@
 
 ```
 Input: config.yaml + workflow_agents.yaml (de Kakashi)
+    ↓
+[frontend_design] Definir design tokens y estructura visual
     ↓
 [code_structure_organizer] Crear estructura carpetas
     ↓
@@ -157,6 +176,8 @@ Iterativamente para cada módulo (broker → data → indicators → signals →
 Input: Ticket TKT-INVRFIC-### + Knowledge base
     ↓
 [ticket_analyzer] (de Kakashi) → Plan técnico
+    ↓
+[frontend_design] (si requiere UI/componentes) → Diseño de interfaz
     ↓
 [broker_api_integrator] o [react_code_generator] o [typescript_code_generator]
     ↓
@@ -246,6 +267,8 @@ export const calculateRSI = (closes: number[], period: number = 14): number => {
 
 ### FASE 2.4 Estructura:
 
+- [ ] Design tokens definidos (colores, tipografía, espaciado)
+- [ ] Tailwind CSS configurado
 - [ ] Proyecto Vite configurado
 - [ ] Estructura SRC-First completa
 - [ ] package.json con dependencias base
@@ -253,12 +276,13 @@ export const calculateRSI = (closes: number[], period: number = 14): number => {
 - [ ] vite.config.ts listo
 - [ ] Alias de rutas setup
 - [ ] README de estructura
-- [ ] Primeros componentes base
+- [ ] Primeros componentes base (atoms)
 
 ### FASE 3 Implementación:
 
 **Por cada módulo/ticket TKT-INVRFIC-###**:
 
+- [ ] Componentes UI diseñados y documentados (si aplica)
 - [ ] Código implementado (TypeScript/React)
 - [ ] Comentarios FIC obligatorios
 - [ ] Tipos TypeScript completos

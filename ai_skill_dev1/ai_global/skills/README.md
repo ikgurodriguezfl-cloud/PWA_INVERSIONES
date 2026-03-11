@@ -31,6 +31,7 @@ Los **Skills** son **capacidades reutilizables** que pueden ser asignadas a uno 
 
 | Skill | Descripción | Entrada | Salida |
 |-------|-------------|---------|--------|
+| `frontend_design` | Diseña interfaces UI/UX | Especificación UI | Componentes .tsx |
 | `react_code_generator` | Genera componentes React | Diseño | Componentes .tsx |
 | `typescript_code_generator` | Genera código TypeScript | Diseño | Código .ts |
 | `vite_code_generator` | Configura Vite | Config | vite.config.ts |
@@ -80,6 +81,7 @@ Los **Skills** son **capacidades reutilizables** que pueden ser asignadas a uno 
 | documentation_writer | | ✅ | | | Documentación | ✅ |
 | dependency_manager | | ✅ | | | Gestión | ✅ |
 | code_structure_organizer | | ✅ | | | Organización | ✅ |
+| frontend_design | | ✅ | | | Diseño | ✅ |
 | code_optimizer | | | ✅ | | Optimización | ✅ |
 | performance_analyzer | | | ✅ | | Análisis | ✅ |
 | security_auditor | | | ✅ | | Auditoría | ✅ |
@@ -108,6 +110,7 @@ Objetivo: Entender requisitos y generar plan técnico
 
 Skills Activos:
 - `architecture_designer` (Kakashi)
+- `frontend_design` (Naruto)
 - `code_structure_organizer` (Naruto)
 - `vite_code_generator` (Naruto)
 - `dependency_manager` (Naruto)
@@ -121,6 +124,7 @@ Objetivo: Crear estructura base del proyecto
 #### Sub-fase 3.1: Desarrollo
 
 Skills Activos:
+- `frontend_design` (Naruto)
 - `react_code_generator` (Naruto)
 - `typescript_code_generator` (Naruto)
 - `broker_api_integrator` (Naruto)

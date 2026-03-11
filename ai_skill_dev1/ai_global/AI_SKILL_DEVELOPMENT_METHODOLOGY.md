@@ -187,7 +187,7 @@ Estos son **4 agentes de IA operativos** que trabajan juntos en el ciclo de desa
 
 👨‍💻 fic_naruto_agent_dev1
 - Rol: Programador Senior #1
-- Skills: react_code_generator, typescript_code_generator, vite_code_generator,
+- Skills: frontend_design, react_code_generator, typescript_code_generator, vite_code_generator,
           tradingview_widgets_integrator, broker_api_integrator, documentation_writer,
           dependency_manager, code_structure_organizer
 - CUÁNDO: FASE 2.4 (Estructura) y FASE 3 (Implementación)
@@ -272,7 +272,7 @@ Ver: `development/workflow_agents.yaml` en cada proyecto para tareas específica
 
 **Skills de cada Agente**:
 - **kakashi**: ticket_analyzer, architecture_designer, requirement_validator, knowledge_synthesizer
-- **naruto**: react_code_generator, typescript_code_generator, vite_code_generator, tradingview_widgets_integrator, broker_api_integrator, documentation_writer, dependency_manager, code_structure_organizer
+- **naruto**: frontend_design, react_code_generator, typescript_code_generator, vite_code_generator, tradingview_widgets_integrator, broker_api_integrator, documentation_writer, dependency_manager, code_structure_organizer
 - **sasuke**: code_optimizer, performance_analyzer, security_auditor, pattern_refactorer
 - **sakura**: test_case_generator, bug_detector, quality_validator, regression_tester
 
